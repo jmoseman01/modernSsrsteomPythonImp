@@ -5,7 +5,7 @@
  Here's documentation examples on the math behind the horizontal algorithm that's implemented here: https://drive.google.com/drive/folders/1xQZA5DM8crRrsOfFwnksZ4EK5YTWpsDV?usp=sharing
  
 
-# How to use ssrsteomTree.py
+# How to use ssrsteom.py
 
 First construct an SsrsteomTree. 
 1. The first argument is a list of output values.
