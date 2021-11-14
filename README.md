@@ -1,4 +1,9 @@
-﻿# modernSsrsteomPythonImp
+﻿# SSRSTEOM - Sequential Successive Recursive Subtraction Termination Entities of Monomials
+ 
+ This is using my horizontal algorithm which takes subtract initial output lists recursively to solve for coeffecients in polynomial.
+ 
+ Here's documentation examples on the math behind the horizontal algorithm that's implemented here: https://drive.google.com/drive/folders/1xQZA5DM8crRrsOfFwnksZ4EK5YTWpsDV?usp=sharing
+ 
 
 # How to use ssrsteomTree.py
 
