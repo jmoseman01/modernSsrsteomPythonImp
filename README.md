@@ -3,9 +3,9 @@
 # How to use ssrsteomTree.py
 
 First construct an ssrsteom_tree. 
-The first argument is a list of output values.
-The second argument is the starting x value
-The thrid argument is the deltax between input values which is static.
+1. The first argument is a list of output values.
+2. The second argument is the starting x value
+3. The thrid argument is the deltax between input values which is static.
 
 You can then assign it to a reference and run the solve method.
 This will populate the coeffecient list of that object.
