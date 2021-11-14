@@ -7,7 +7,7 @@
 
 # How to use ssrsteomTree.py
 
-First construct an ssrsteom_tree. 
+First construct an SsrsteomTree. 
 1. The first argument is a list of output values.
 2. The second argument is the starting x value
 3. The thrid argument is the deltax between input values which is static.
@@ -17,7 +17,7 @@ This will populate the coeffecient list of that object.
 
 
 ```python
-from ssrsteomTree import ssrsteomTree
+from ssrsteom import SsrsteomTree
 from decimal import Decimal
 ssrsteom_tree = ssrsteomTree([Decimal('68.035'),Decimal('94.000'),Decimal('126.625'),Decimal('166.720')], Decimal('1.9'),Decimal('.3'))
 ssrsteom_tree.solve(ssrsteom_tree)
