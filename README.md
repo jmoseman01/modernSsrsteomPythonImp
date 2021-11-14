@@ -12,7 +12,7 @@ This will populate the coeffecient list of that object.
 
 
 ```python
-# the first argument is the 
+from ssrsteomTree import ssrsteomTree
 ssrsteom_tree = ssrsteomTree([Decimal('68.035'),Decimal('94.000'),Decimal('126.625'),Decimal('166.720')], Decimal('1.9'),Decimal('.3'))
 ssrsteom_tree.solve(ssrsteom_tree)
 ssrsteom_tree.coeffecientList # this will output the coeffecients that hit the points above 
