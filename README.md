@@ -5,7 +5,7 @@
  Here's documentation examples on the math behind the horizontal algorithm that's implemented here: https://drive.google.com/drive/folders/1xQZA5DM8crRrsOfFwnksZ4EK5YTWpsDV?usp=sharing
  
 
-# How to use ssrsteomTree.py
+# How to use ssrsteom.py
 
 First construct an SsrsteomTree. 
 1. The first argument is a list of output values.
@@ -19,7 +19,7 @@ This will populate the coeffecient list of that object.
 ```python
 from ssrsteom import SsrsteomTree
 from decimal import Decimal
-ssrsteom_tree = ssrsteomTree([Decimal('68.035'),Decimal('94.000'),Decimal('126.625'),Decimal('166.720')], Decimal('1.9'),Decimal('.3'))
+ssrsteom_tree = SsrsteomTree([Decimal('68.035'),Decimal('94.000'),Decimal('126.625'),Decimal('166.720')], Decimal('1.9'),Decimal('.3'))
 ssrsteom_tree.solve(ssrsteom_tree)
 ssrsteom_tree.coeffecientList # this will output the coeffecients that hit the points above 
 # [Decimal('5'), Decimal('4.0'), Decimal('7.00'), Decimal('6.000')]
