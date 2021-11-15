@@ -55,16 +55,6 @@ class SsrsteomTree(object):
         self.coeffecientList.append(
             runningSsrsteomTree.coeffecient_of_highest_degree)
         
-        '''
-        this list is to store what's left of the successive polynomial output
-        e.g. if you have an initial output list like 2x^3+1 with input values in the domain [1,4] 
-        where your delta x is 1 your output list would be [2*1^3+1,2*2^3+1,2*3^3+1,2*4^3+1] = [3, 17, 55, 129]
-        using deviation observations you can find that the terminating entity or the term that iterates itself is 12
-        the highest coeffecient is equal to the terminating Entity / (self.deltax) ^ highest_degree * highest_degree!
-        You can then use your monomial function of the which in the case of the above output/polynomial would be 2x^3
-        in the domain [1,4] where deltax is 1 so this is doing [3, 17, 55, 129] - [2, 16, 54, 128] = [1,1,1,1]
-
-        '''
         monomialFunc = lambda x: runningSsrsteomTree.coeffecient_of_highest_degree * \
             Decimal(str(x))**runningSsrsteomTree.highest_degree
 
