@@ -7,14 +7,13 @@ import unittest
 from ssrsteom import SsrsteomTree
 from decimal import Decimal
 
-
 class Test(unittest.TestCase):
 
 
     def testSsrstoemTreeConstructionAlternatDeltax(self):
         ssrsteom_tree = SsrsteomTree([Decimal('68.035'),Decimal('94.000'),Decimal('126.625'),Decimal('166.720')], Decimal('1.9'),Decimal('.3'))
         assert ssrsteom_tree.terminatingEntity == Decimal('.810')
-        
+
     def testSrrsteomTreeSolveCoeffecients(self):
         ssrsteom_tree = SsrsteomTree([Decimal('68.035'),Decimal('94.000'),Decimal('126.625'),Decimal('166.720')], Decimal('1.9'),Decimal('.3'))
         ssrsteom_tree.solve(ssrsteom_tree)
